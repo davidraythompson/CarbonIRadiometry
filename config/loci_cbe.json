@@ -1,0 +1,37 @@
+{
+    "name":"CARBON-I CBE - 800k e- full well",
+    "f_number": 2.2,
+    "wavelength_file": "data/wavelengths.txt",
+    "integration_seconds" : 0.044,
+    "electronics": {
+        "electrons_per_dn": 61.5,
+        "compression_error_dn": 0,
+        "read_noise": 100,
+        "electronic_noise": 0,
+        "number_of_reads": 1
+    },
+    "detector": {
+        "rows": 3200,
+        "columns": 300,
+        "temperature": 160,
+        "pitch_cm": 0.0018,
+        "wellsize": 800000,
+        "cutoff_microns": 2.5,
+        "derate": 10,
+        "dark_electrons": 3000,
+        "qe_file": "data/components/20240826_CarbonI_CPMQE.txt"
+    },
+    "telescope": {
+        "temperature": 279,    
+        "Mirror_1_Efficiency":   "data/components/20240826_CarbonI_AlMirror.txt",
+        "Mirror_2_Efficiency":   "data/components/20240826_CarbonI_AlMirror.txt",
+        "Mirror_3_Efficiency":   "data/components/20240826_CarbonI_AlMirror.txt"
+    },
+    "spectrometer": {
+        "slit_width_cm": 0.0036,
+        "temperature": 246,
+        "Dyson_Block_Efficiency":     "data/components/20240826_CarbonI_Suprasil3001Lens.txt",
+        "Grating_Efficiency":         "data/components/20240824_CarbonI_Grating.txt",
+        "Bandpass_Filter": "data/components/20240826_CarbonI_BandpassFilter.txt"
+    }
+}

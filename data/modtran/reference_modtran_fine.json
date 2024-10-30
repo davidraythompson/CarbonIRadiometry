@@ -1,0 +1,120 @@
+{
+  "MODTRAN": [
+      {
+      "MODTRANINPUT": {
+        "NAME": "sbg_zenith",
+        "DESCRIPTION": "",
+        "CASE": 0,
+        "RTOPTIONS": {
+          "MODTRN": "RT_CORRK_FAST",
+          "LYMOLC": false,
+          "T_BEST": false,
+          "IEMSCT": "RT_SOLAR_AND_THERMAL",
+          "IMULT": "RT_DISORT",
+          "DISALB": true,
+          "NSTR": 8,
+          "SOLCON": 0.0
+        },
+        "ATMOSPHERE": {
+          "CO2MX": 450.0,
+          "H2OSTR": 1.5,
+          "H2OUNIT": "g",
+          "O3STR": 0.3,
+          "O3UNIT": "a"
+        },
+        "AEROSOLS": {
+          "IHAZE": "AER_NONE"
+        },
+        "GEOMETRY": {
+          "ITYPE": 3,
+          "H1ALT": 410.0,
+          "OBSZEN": 180.0,
+          "IDAY": 176,
+          "IPARM": 12,
+          "PARM1": 180.0,
+          "PARM2": 0
+        },
+        "SURFACE": {
+          "SURFTYPE": "REFL_LAMBER_MODEL",
+          "NSURF": 1,
+          "SURFP": {
+            "CSALB": "LAMB_CONST_0_PCT"
+          }
+        },
+        "SPECTRAL": {
+          "V1": 320.0,
+          "V2": 2560.0,
+          "DV": 1,
+          "FWHM": 1,
+          "YFLAG": "R",
+          "XFLAG": "N",
+          "FLAGS": "NT A   ",
+          "BMNAME": "01_2013",
+          "FILTNM": "/Users/drt/src/sbg_radiometry/modtran/wavelengths_fine.flt"
+        },
+        "FILEOPTIONS": {
+          "NOPRNT": 2,
+          "CKPRNT": true
+        }
+      }
+    },
+    {
+      "MODTRANINPUT": {
+        "NAME": "sbg_reference",
+        "DESCRIPTION": "",
+        "CASE": 0,
+        "RTOPTIONS": {
+          "MODTRN": "RT_CORRK_FAST",
+          "LYMOLC": false,
+          "T_BEST": false,
+          "IEMSCT": "RT_SOLAR_AND_THERMAL",
+          "IMULT": "RT_DISORT",
+          "DISALB": true,
+          "NSTR": 8,
+          "SOLCON": 0.0
+        },
+        "ATMOSPHERE": {
+          "CO2MX": 450.0,
+          "H2OSTR": 1.5,
+          "H2OUNIT": "g",
+          "O3STR": 0.3,
+          "O3UNIT": "a"
+        },
+        "AEROSOLS": {
+          "IHAZE": "AER_RURAL"
+        },
+        "GEOMETRY": {
+          "ITYPE": 3,
+          "H1ALT": 410.0,
+          "OBSZEN": 180.0,
+          "IDAY": 176,
+          "IPARM": 12,
+          "PARM1": 180.0,
+          "PARM2": 23.4
+        },
+        "SURFACE": {
+          "SURFTYPE": "REFL_LAMBER_MODEL",
+          "NSURF": 1,
+          "SURFP": {
+            "CSALB": "LAMB_CONST_0_PCT"
+          }
+        },
+        "SPECTRAL": {
+          "V1": 320.0,
+          "V2": 2560.0,
+          "DV": 1,
+          "FWHM": 1,
+          "YFLAG": "R",
+          "XFLAG": "N",
+          "FLAGS": "NT A   ",
+          "BMNAME": "01_2013",
+          "FILTNM": "/Users/drt/src/sbg_radiometry/modtran/wavelengths_fine.flt"
+        },
+        "FILEOPTIONS": {
+          "NOPRNT": 2,
+          "CKPRNT": true
+        }
+      }
+    }   
+  ]
+}

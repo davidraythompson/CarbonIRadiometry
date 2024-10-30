@@ -1,0 +1,63 @@
+{
+  "MODTRAN": [
+    {
+      "MODTRANINPUT": {
+        "NAME": "loci",
+        "DESCRIPTION": "",
+        "CASE": 0,
+        "RTOPTIONS": {
+          "MODTRN": "RT_CORRK_FAST",
+          "LYMOLC": false,
+          "T_BEST": false,
+          "IEMSCT": "RT_SOLAR_AND_THERMAL",
+          "IMULT": "RT_DISORT",
+          "DISALB": true,
+          "NSTR": 8,
+          "SOLCON": 0.0
+        },
+        "ATMOSPHERE": {
+          "CO2MX": 450.0,
+          "H2OSTR": 1.5,
+          "H2OUNIT": "g",
+          "O3STR": 0.3,
+          "O3UNIT": "a"
+        },
+        "AEROSOLS": {
+          "IHAZE": "AER_NONE"
+        },
+        "GEOMETRY": {
+          "ITYPE": 3,
+          "H1ALT": 410.0,
+          "OBSZEN": 180.0,
+          "IDAY": 176,
+          "IPARM": 12,
+          "PARM1": 180.0,
+          "PARM2": 45
+        },
+        "SURFACE": {
+          "SURFTYPE": "REFL_LAMBER_MODEL",
+          "GNDALT": 0.001,
+          "NSURF": 1,
+          "SURFP": {
+            "CSALB": "LAMB_CONST_0_PCT"
+          }
+        },
+        "SPECTRAL": {
+          "V1": 1900.0,
+          "V2": 2550.0,
+          "DV": 0.1,
+          "FWHM": 0.1,
+          "YFLAG": "R",
+          "XFLAG": "N",
+          "FLAGS": "NT A   ",
+          "BMNAME": "p1_2013",
+          "FILTNM": "/Users/drt/src/loci/data/modtran/wavelengths.flt"
+        },
+        "FILEOPTIONS": {
+          "NOPRNT": 2,
+          "CKPRNT": true
+        }
+      }
+    }   
+  ]
+}
